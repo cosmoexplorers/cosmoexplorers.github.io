@@ -29,9 +29,47 @@
     li a:hover {
       background-color: #111;
     }
-    </style>
+
+    body {
+      /*background-image: linear-gradient(to right, rgb(0, 0, 0), black);*/
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background-color: white;
+      width: 93%;
+      color: black;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .heading {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .content {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      width: 70%;
+      float: left;
+      margin-right: -100%;
+    }
+
+    /*.featured {
+      width: 25%;
+      margin-left: -50%;
+      float: left;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }*/
+  </style>
 </head>
-<body>
+<center>
+<body background="background.jpeg">
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
@@ -41,12 +79,22 @@
   <header>
     <h1>Welcome to CosmoExplorer</h1>
   </header>
-  <div class="container">
+  <!--<div class="container">
     <h2>About CosmoExplorer</h2>
     <p>CosmoExplorer is a platform dedicated to exploring the wonders of the cosmos. From distant galaxies to the mysteries of dark matter, we aim to provide a comprehensive resource for enthusiasts and researchers alike.</p>
+  </div>-->
+  <div class="container">
+    <div>
+      <h1 class="heading">About CosmoExplorer</h1>
+      <p class="content">CosmoExplorer is a platform dedicated to exploring the wonders of the cosmos. From distant galaxies to the mysteries of dark matter, we aim to provide a comprehensive resource for enthusiasts and researchers alike.</p>
+    </div>
+    <!--<div class="featured">
+      <h2>Featured Blogs</h2>
+    </div>-->
   </div>
   <footer>
     <p>&copy; 2024 CosmoExplorer</p>
   </footer>
 </body>
+</center>
 </html>
