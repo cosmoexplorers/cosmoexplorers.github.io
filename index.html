@@ -6,73 +6,38 @@
   <title>CosmoExplorer</title>
   <link rel="stylesheet" href="styles.css"> <!-- Linking to an external CSS file -->
   <style>
-    /* Navigation bar styles */
-    nav {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-    }
-
-    nav ul {
+    ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-      text-transform: uppercase;
-    }
-
-    nav ul li a:hover {
-      background-color: #555;
-    }
-
-    /* Main content container */
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    footer {
+      overflow: hidden;
       background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
-  </style>
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
 </head>
 <body>
-  <header class="StandardNavigationWrapper-gtbPYz bOoueh site-navigation" data-testid="StandardNavigationWrapper" data-event-boundary="click" data-event-click="{&quot;pattern&quot;:&quot;StandardNavigation&quot;}" data-in-view="{&quot;pattern&quot;:&quot;StandardNavigation&quot;}" data-include-experiments="true"><div data-testid="StandardNavigationDrawer" class="StandardNavigationDrawer-gDKJmv iUbKRP"><button class="BaseButton-bLlsy ButtonWrapper-xCepQ fhIjxp jmNqqS button button--utility StandardNavigationDrawerButtonToggle-irxPzn cpSFSD standard-navigation__drawer-toggle" data-event-click="{&quot;element&quot;:&quot;Button&quot;}" data-testid="Button" role="button" type="button"><span class="ButtonLabel-cjAuJN bBWXSg button__label">Open Navigation Menu</span><div class="ButtonIconWrapper-gFdzAL bPDyTT button__icon-container"><svg class="ButtonIcon-YqaGo iwlhuX button-icon icon icon-menu" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M8 10h16v2H8v-2zm0 5h16v2H8v-2zm0 5h16v2H8v-2z" fill-rule="evenodd"></path></svg></div></button><div class="AlertWrapper-gvFATk fKRrWH StandardNavigationDrawerBookmarkAlert-irmtYV pYBCk" data-testid="BookmarkAlertMobile" role="tooltip" data-event-boundary="click" data-event-click="{&quot;pattern&quot;:&quot;ConnectedBookmarkAlert&quot;}" data-in-view="{&quot;pattern&quot;:&quot;ConnectedBookmarkAlert&quot;}" data-include-experiments="true"><div aria-hidden="true" role="presentation" class="AlertArrow-daOgye iyDCNz alert-arrow"></div><div aria-hidden="true" role="presentation" class="AlertIconWrapper-iHNVmf lleInn"><svg class="icon icon-bookmark icon-bookmark--activated" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Story Saved</title><path class="icon-bookmark-fill icon-bookmark--activated-checkmark" fill="#000" fill-rule="evenodd" d="M5 2h10v1H6v18.188l6.5-3.714 6.5 3.714V11.05h1v11.862l-7.5-4.286L5 22.912V2Z" clip-rule="evenodd"></path><path class="icon-bookmark--activated-checkmark-stroke" fill="#fff" fill-rule="evenodd" d="m12.525 11.218 6.522-6.521.707.707-7.229 7.228L8.49 8.597l.707-.707 3.328 3.328Z" clip-rule="evenodd"></path></svg></div><div class="BaseWrap-sc-gjQpdd BaseText-ewhhUZ AlertMessage-jgAjgo bVCFRm gUcrnm jjFUCG alert-message"><p>To revisit this article, visit My Profile, then<!-- -->&nbsp;<a href="/account/saved">View saved stories</a>.</p></div><button class="BaseButton-bLlsy ButtonWrapper-xCepQ fhIjxp jmNqqS button button--utility close-alert-button" data-event-click="{&quot;element&quot;:&quot;Button&quot;}" data-testid="Button" role="button" type="button"><span class="ButtonLabel-cjAuJN bBWXSg button__label">Close Alert</span><div class="ButtonIconWrapper-gFdzAL bPDyTT button__icon-container"><svg class="ButtonIcon-YqaGo iwlhuX button-icon icon icon-close" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="none"><path d="M16 14.586l6.364-6.364 1.414 1.414L17.414 16l6.364 6.364-1.414 1.414L16 17.414l-6.364 6.364-1.414-1.414L14.586 16 8.222 9.636l1.414-1.414z" fill-rule="nonzero"></path></svg></div></button></div></div><div class="StandardNavigationSectionLogo-bghSeq ga-dTfl"><a href="/" data-testid="Logo" class="BaseWrap-sc-gjQpdd BaseText-ewhhUZ BaseLink-eNWuiM StandardNavigationLogoLink-bfpyLL iUEiRd kZoQA-D jSvUDd jYKccq"><span class="SpanWrapper-umhxW jvZaPI responsive-asset StandardNavigationLogoImage-kyNDxs jVwXYs"><picture class="ResponsiveImagePicture-cWuUZO dUOtEa StandardNavigationLogoImage-kyNDxs jVwXYs responsive-image"><img alt="WIRED" class="ResponsiveImageContainer-eybHBd fptoWY responsive-image__image" src="/verso/static/wired/assets/logo-header.svg" srcset="" sizes="100vw"></picture></span></a></div><div data-testid="StandardNavigationHeadLineBlock" class="StandardNavigationHeadLineBlock-kwGkqn dqfBFX"><div aria-hidden="true" class="StandardNavigationHeadLineBlockHeadLine-dfABRF jwCJuW">WIRED - The Latest in Technology, Science, Culture and Business</div><div class="StandardNavigationHeadLineBlockChannelNavigation-ccHZSK fkgYDz"><div class="StandardNavigationSectionPrimaryLinks-eSbMKK qpYrV"><nav aria-label="Primary" class="NavigationWrapper-bFftAs fKSZRK StandardNavigationNavPrimaryLinks-envmpy dktYVh" data-testid="navigation"><ul class="NavigationListWrapper-gWXLVS eMPBBw navigation__list" data-testid="navigation__list"><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/security/" data-testid="navigation__internal-link">Security</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="https://www.wired.com/category/politics/" data-testid="navigation__internal-link">Politics</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/gear/" data-testid="navigation__internal-link">Gear</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/backchannel/" data-testid="navigation__internal-link">Backchannel</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/business/" data-testid="navigation__internal-link">Business</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/science/" data-testid="navigation__internal-link">Science</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/culture/" data-testid="navigation__internal-link">Culture</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a role="link" class="NavigationInternalLink-cWEaeo knabMb navigation__link" href="/category/ideas/" data-testid="navigation__internal-link">Ideas</a></li><li class="NavigationListItemWrapper-cxLZKD dsgTQs navigation__list-item" data-testid="navigation__list-item"><a class="external-link NavigationExternalLink-hktPkS jLQUSr navigation__link" data-event-click="{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://shop.wired.com/&quot;}" href="https://shop.wired.com/" rel="noopener" target="_blank">Merch</a></li></ul></nav><span class="NavigationDivider-fEDnwq ixXXMs navigation__divider"></span></div></div></div><div class="StandardNavigationSectionUtilityLinks-ecAXBS gGBVFy"><div class="standard-navigation-account standard-navigation__section--utility-links-login"><div class="AlertWrapper-gvFATk fKRrWH AccountDropdownBookmarkAlert-gjKEYt jsfpOb" data-testid="BookmarkAlertDesktop" role="tooltip" data-event-boundary="click" data-event-click="{&quot;pattern&quot;:&quot;ConnectedBookmarkAlert&quot;}" data-in-view="{&quot;pattern&quot;:&quot;ConnectedBookmarkAlert&quot;}" data-include-experiments="true"><div aria-hidden="true" role="presentation" class="AlertArrow-daOgye iyDCNz alert-arrow"></div><div aria-hidden="true" role="presentation" class="AlertIconWrapper-iHNVmf lleInn"><svg class="icon icon-bookmark icon-bookmark--activated" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Story Saved</title><path class="icon-bookmark-fill icon-bookmark--activated-checkmark" fill="#000" fill-rule="evenodd" d="M5 2h10v1H6v18.188l6.5-3.714 6.5 3.714V11.05h1v11.862l-7.5-4.286L5 22.912V2Z" clip-rule="evenodd"></path><path class="icon-bookmark--activated-checkmark-stroke" fill="#fff" fill-rule="evenodd" d="m12.525 11.218 6.522-6.521.707.707-7.229 7.228L8.49 8.597l.707-.707 3.328 3.328Z" clip-rule="evenodd"></path></svg></div><div class="BaseWrap-sc-gjQpdd BaseText-ewhhUZ AlertMessage-jgAjgo bVCFRm gUcrnm jjFUCG alert-message"><p>To revisit this article, select My Account, then&nbsp;<a href="/account/saved">View saved stories</a></p></div><button class="BaseButton-bLlsy ButtonWrapper-xCepQ fhIjxp jmNqqS button button--utility close-alert-button" data-event-click="{&quot;element&quot;:&quot;Button&quot;}" data-testid="Button" role="button" type="button"><span class="ButtonLabel-cjAuJN bBWXSg button__label">Close Alert</span><div class="ButtonIconWrapper-gFdzAL bPDyTT button__icon-container"><svg class="ButtonIcon-YqaGo iwlhuX button-icon icon icon-close" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="none"><path d="M16 14.586l6.364-6.364 1.414 1.414L17.414 16l6.364 6.364-1.414 1.414L16 17.414l-6.364 6.364-1.414-1.414L14.586 16 8.222 9.636l1.414-1.414z" fill-rule="nonzero"></path></svg></div></button></div><a href="/auth/initiate?redirectURL=%2F&amp;source=VERSO_NAVIGATION" rel="nofollow" data-testid="signIn" class="StandardNavigationAccountLabel-pyqL eHVyEq">Sign In</a></div><nav aria-label="Utility" class="NavigationWrapper-bFftAs fKSZRK StandardNavigationNavUtilityLinks-bnFfCi ixxmNg" data-testid="navigation"><ul class="NavigationListWrapper-gWXLVS eMPBBw navigation__list" data-testid="navigation__list"></ul></nav><span class="NavigationDivider-fEDnwq ixXXMs navigation__divider"></span><div class="StandardNavigationConsumerMarketingUnitWrapper-iemhjj dZqPLK"><div class="ConsumerMarketingUnitThemedWrapper-iUTMTf jssHut consumer-marketing-unit consumer-marketing-unit--nav-dialog" role="presentation" aria-hidden="true"><div class="consumer-marketing-unit__slot consumer-marketing-unit__slot--nav-dialog"></div><div class="journey-unit"></div></div><div class="ConsumerMarketingUnitThemedWrapper-iUTMTf jssHut consumer-marketing-unit consumer-marketing-unit--nav-cta" role="presentation" aria-hidden="false"><div class="consumer-marketing-unit__slot consumer-marketing-unit__slot--nav-cta"></div><div class="journey-unit"><div class="cm-nav-cta-failsafe journey-template--nav-cta"><style>.cm-nav-cta-failsafe{background-color:#fff;bottom:2px;position:relative}.cm-nav-cta{height:23px;width:80px}.cm-nav-cta-anchor{background:#2f6697;border-radius:2px;color:#fff;display:block;font-family:WiredMono,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:11px;font-weight:500;height:100%;line-height:23px;text-align:center;text-decoration:inherit;text-transform:uppercase;width:100%}@media screen and (max-width:767px){.cm-nav-cta{margin-right:16px}}</style>
-    <div class="cm-nav-cta"><a class="cm-nav-cta-anchor" target="_blank" rel="noopener noreferrer" href="https://www.wired.com/v2/offers/wir214?source=Site_0_JNY_WIR_DESKTOP_NAV_CTA_0_2023_INTL_SALE_ZZ&amp;redirectURL=https%3A%2F%2Fwww.wired.com%2F">SUBSCRIBE</a></div></div></div></div><div class="ConsumerMarketingUnitThemedWrapper-iUTMTf jssHut consumer-marketing-unit--nav-rollover dhnhglmig" role="presentation" style=""><div class="consumer-marketing-unit__slot consumer-marketing-unit__slot--nav-rollover"></div><div class="fjbnge" style=""><div class="cm-nav-rollover journey-template--rollover"><style>body{display:contents}@font-face{font-family:Apercu;font-style:normal;font-weight:700;src:url(/journey/fonts/Apercu-Bold-Pro.woff) format('woff')}@font-face{font-family:Apercu;font-style:normal;font-weight:400;src:url(/journey/fonts/Apercu-Regular-Pro.woff) format('woff')}.cm-nav-rollover-container{background:linear-gradient(112.78deg,#f3f3f3 1.13%,#f7f7f7 57.44%,#fff 90.08%);background-size:300px 200px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;height:200px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:23px 12px 23px 23px;text-decoration:none;width:300px;white-space:initial}.cm-nav-rollover__left-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.cm-nav-rollover__right-side{padding:40px 5px 0 0}.cm-nav-rollover-container:hover{opacity:1}.cm-nav-rollover__image{height:112px;width:94px}.cm-nav-rollover__subscribe{background-color:#057dbc;color:#fff;display:inline-block;font-family:WiredMono,helvetica,sans-serif;font-weight:400;font-size:13px;height:32px;letter-spacing:1.05px;line-height:32px;margin:33px 0 2px;text-align:center;text-transform:uppercase;width:105px}.cm-nav-rollover__subscribe:hover{text-decoration:underline}.cm-nav-rollover__dek,.cm-nav-rollover__hed{font-size:24px;font-weight:700;line-height:28px;font-family:Apercu,helvetica,sans-serif;margin:0}.cm-nav-rollover__dek{margin-top:3px}.cm-nav-rollover__dek del{font-weight:400;margin-right:8.5px;text-decoration-thickness:2px}</style>
-    <div><a class="cm-nav-rollover-container" href="https://www.wired.com/v2/offers/wir214?source=Site_0_JNY_WIR_DESKTOP_NAV_ROLLOVER_0_2023_INTL_SALE_ZZ&amp;redirectURL=https%3A%2F%2Fwww.wired.com%2F" target="_blank" rel="noopener noreferrer"><div class="cm-nav-rollover__left-side"><h1 class="cm-nav-rollover__hed">Get 1 year of
-    WIRED for</h1>
-          <h1 class="cm-nav-rollover__dek"><del>$29.99</del> $5</h1>
-          <span class="cm-nav-rollover__subscribe">Subscribe</span></div>
-        <div class="cm-nav-rollover__right-side">        
-            <img class="cm-nav-rollover__image" src="https://media.wired.com/photos/63330e09eecde8c117e7f621/master/w_230,h_274,c_limit/robot.png?format=original" alt="Wired robot">
-          
-        </div></a></div></div></div></div></div><div class="ConsumerMarketingUnitThemedWrapper-iUTMTf jssHut consumer-marketing-unit consumer-marketing-unit--nav-gift" role="presentation" aria-hidden="true"><div class="consumer-marketing-unit__slot consumer-marketing-unit__slot--nav-gift"></div><div class="journey-unit"></div></div></div><a href="/search/" aria-label="Search" class="BaseButton-bLlsy ButtonWrapper-xCepQ fhIjxp dtmNtC button button--utility StandardNavigationSearchButton-bhoYY hhlygD" data-event-click="{&quot;element&quot;:&quot;Button&quot;,&quot;outgoingURL&quot;:&quot;/search/&quot;}" data-testid="Button" type=""><span class="ButtonLabel-cjAuJN bBWXSg button__label">Search</span><div class="ButtonIconWrapper-gFdzAL bPDyTT button__icon-container"><svg class="ButtonIcon-YqaGo iwlhuX button-icon icon icon-search" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" data-testid="iconSearch"><title>Search</title><path d="M14.5 10a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm5.249 8.335l4.458 4.458-1.414 1.414-4.458-4.458a6.5 6.5 0 1 1 1.414-1.414z" fill-rule="nonzero"></path></svg></div></a>
-  </header>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
   <header>
     <h1>Welcome to CosmoExplorer</h1>
   </header>
